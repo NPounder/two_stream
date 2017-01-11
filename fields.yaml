@@ -1,0 +1,129 @@
+#Information about Northampton fields
+---
+
+fields: 
+  -'lower_farm'
+  -'village_field'
+  -'back_field'
+  -'stockings'
+  -'hill_field'
+  -'hill_field_lower'
+
+
+lower_farm:
+  name: 'LowerFarm'
+  lat:  !!float "-0.863234"
+  lon: 52.186673
+  crop:
+    2006: 'oilseed_rape'
+    2007: 'winter_wheat'
+    2008: 'oilseed_rape'
+    2009: 'winter_wheat'
+    2010: 'oilseed_rape'
+    2011: 'winter_wheat'
+    2012: 'oilseed_rape'
+    2013: 'winter_wheat'
+    2014: 'oilseed_rape'
+    2015: 'winter_wheat'
+
+
+
+lower_farm_n:
+  name: 'LowerFarm_N'
+  lat:  !!float "-0.866733"
+  lon: 52.189183
+  crop:
+    2006: 'oilseed_rape'
+    2007: 'winter_wheat'
+    2008: 'oilseed_rape'
+    2009: 'winter_wheat'
+    2010: 'oilseed_rape'
+    2011: 'winter_wheat'
+    2012: 'oilseed_rape'
+    2013: 'winter_wheat'
+    2014: 'oilseed_rape'
+    2015: 'winter_wheat'
+
+
+village_field:
+  name: 'VillageField'
+  lat:  !!float "-0.857858"
+  lon: 52.171719
+  crop:
+    2006: 'oilseed_rape'
+    2007: 'winter_wheat'
+    2008: 'oilseed_rape'
+    2009: 'winter_wheat'
+    2010: 'oilseed_rape'
+    2011: 'winter_wheat'
+    2012: 'oilseed_rape'
+    2013: 'summer_barley'
+    2014: 'oilseed_rape'
+    2015: 'winter_wheat'
+
+back_field:
+  name: 'BackField'
+  lat:  !!float "-0.861633"
+  lon: 52.175186
+  crop:
+    2005: 'oilseed_rape'
+    2006: 'winter_wheat'
+    2007: 'oilseed_rape +?'
+    2008: 'winter_wheat +?'
+    2010: 'oilseed_rape'
+    2011: 'winter_wheat'
+    2012: 'winter_wheat'
+    2014: 'winter_wheat'
+    2015: 'oilseed_rape'
+
+
+stockings:
+  name: 'Stockings'
+  lat:  !!float "-0.843442"
+  lon: 52.175186
+  crop:
+    2005: 'oilseed_rape'
+    2006: 'winter_wheat'
+    2007: 'oilseed_rape'
+    2008: 'winter_wheat'
+    2009: 'oilseed_rape'
+    2010: 'winter_wheat'
+    2011: 'oilseed_rape'
+    2012: 'winter_wheat'
+    2013: 'summer_oilseed_rape'
+    2014: 'winter_wheat'
+    2015: 'oilseed_rape'
+
+
+hill_grounds:
+  name: 'HillGrounds'
+  lat:  !!float "-0.851119"
+  lon: 52.162229
+  crop:
+    2005: 'oilseed_rape'
+    2006: 'winter_wheat'
+    2008: 'winter_wheat'
+    2009: 'oilseed_rape'
+    2010: 'winter_wheat'
+    2011: 'oilseed_rape'
+    2012: 'winter_wheat'
+    2013: 'summer_oilseed_rape'
+    2014: 'mixed'
+    2015: 'oilseed_rape'
+
+
+hill_grounds_s:
+  name: 'HillGrounds_S'
+  lat:  !!float "-0.851119"
+  lon: 52.162229
+  crop:
+    2005: 'oilseed_rape'
+    2006: 'winter_wheat'
+    2008: 'winter_wheat'
+    2009: 'oilseed_rape'
+    2010: 'winter_wheat'
+    2011: 'oilseed_rape'
+    2012: 'winter_wheat'
+    2013: 'summer_oilseed_rape'
+    2014: "summer_barley"
+    2015: 'oilseed_rape'
