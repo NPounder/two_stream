@@ -36,7 +36,7 @@ prior_cov_snow[5,2] = 0.8670*0.346*0.25
 
 iprior_cov = np.linalg.inv ( prior_cov )
 iprior_cov_snow = np.linalg.inv ( prior_cov_snow )
-
+49942.57
 ####### Green leaves
 
 mu_prior = np.array ([0.13, 1, 0.1, 0.77, 2., 0.18, 2.])

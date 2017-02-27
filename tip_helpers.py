@@ -27,7 +27,8 @@ def retrieve_albedo(year, fluxnet_site, albedo_unc, albedo_db="albedo.sql"):
     """
     obs = Observations(albedo_db)
     albedo_data = obs.query(year, fluxnet_site)
-    passer = albedo_data.albedo_qa != 255
+    passer = (albedo_data.albedo_qa != 255) & (albedo_data.snow_qa !=1)
+    print zip(albedo_data.albedo_qa, albedo_data.snow_qa, passer)
     passer = np.where(np.logical_or(albedo_data.bhr_vis < 0.01,
                                     albedo_data.bhr_nir < 0.01),
                       False, passer)
