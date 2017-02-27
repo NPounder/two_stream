@@ -136,7 +136,6 @@ def single_inversion ( year, site ):
             state[j,:] = solutions[best_sol, :]
 
     return state
-
 if __name__ == "__main__":
 
     retval = single_inversion( 2010, "ES-LMa")

@@ -12,8 +12,8 @@ from scipy.optimize import minimize
 from scipy.interpolate import UnivariateSpline
 
 from get_albedo import Observations
-from tip_helpers import retrieve_albedo
-
+#from Northampton_helpers #import retrieve_albedo_season
+import Northampton_helpers
 
 the_bounds= [[0.01, 0.95], [0.1, 4], [0, 0.95], [0.01, 0.95],
              [0.1, 4], [0, 0.95], [0.01, 10]]
@@ -90,9 +90,9 @@ def tip_single_inversion ( x0, albedo, bu, mu, inv_cov_prior, gp_vis, gp_nir ):
 
 
 
-def single_inversion ( year, site ):
+def single_inversion ( startdate, enddate, site ):
     n_tries = 2
-    observations, mask, bu, passer_snow = retrieve_albedo( year, site, [0.05, 0.07])
+    observations, mask, bu, passer_snow, dates = Northampton_helpers.retrieve_albedo_season( startdate, enddate, site, [0.05, 0.07])
 
     vis_emu_pkl = "tip_vis_emulator_real.pkl"
     nir_emu_pkl = "tip_nir_emulator_real.pkl"
@@ -136,6 +136,7 @@ def single_inversion ( year, site ):
             state[j,:] = solutions[best_sol, :]
 
     return state
+
 
 if __name__ == "__main__":
 
